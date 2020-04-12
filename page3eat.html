@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>Things to eat at Pasir Ris Park</title>
+<head>
+<meta charset="UTF-8">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+.active {
+  background-color: GreenYellow;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 70px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+  border-radius: 12px;
+}
+
+.block:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+a:link {
+  text-decoration: none;
+}
+</style>
+</head>
+<body bgcolor="AliceBlue">
+
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px"><a href="myindex.html">
+  <img src="https://image.freepik.com/free-photo/blur-nature-green-park-with-bokeh-sun-light-abstract-background-copy-space-travel-adventure-environment-concept-vintage-tone-filter-color-style_1253-1107.jpg" width="1500px" height="600px">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Day out at</h1>
+    <h3 class="w3-hide-medium w3-hide-small">PASIR RIS PARK</h3>
+  </div></a>
+  
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="page1do.html" class="w3-bar-item w3-button"><b>Things to do </b><i class='fas fa-bicycle'></i></a>
+    <a href="page3eat.html" class="w3-bar-item w3-button; active"><b>Things to eat </b><i class='fas fa-utensils'></i></a>
+    <a href="page2direction.html" class="w3-bar-item w3-button"><b>How to get there </b><i class='fas fa-map-marked-alt'></i></a>
+  </div>
+</header>
+
+<p><font color="AliceBlue">Empty</font></p>
+
+<div style="text-align:center">
+  <p><font size="6">Click on the boxes below to find out more:</font></p>
+</div>
+
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:mediumseagreen;">
+<img src="https://cdn.clipart.email/0c348583514d96df53066cbf8b788a47_clipart-family-barbecue-1_2340-1389.png" width="300px" height="178px">
+    Barbecue
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:royalblue;">
+<img src="https://cdn.clipart.email/cd620227032a9113b4a55fdfb39ad194_man-cliparthot-of-restaurant-burger-and-fries-transparent-png-_3899-3822.png" width="181px" height="178px">
+    <br>Georges
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:tomato;">
+<img src="https://pngimage.net/wp-content/uploads/2018/06/satay-png-.png" width="178px" height="178px">
+    <br>Rasa Istimewa
+  </div>
+</div>
+
+<div id="b1" class="containerTab" style="display:none;background:mediumseagreen">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Barbeque by the beach</h2>
+  <p>Fancy cooking your own food and eating in the great outdoors? You can hold a barbecue at Pasir Ris Park. There are 65 BBQ pits located across the entire park.</p>
+  <button class="block" style="background-color: mediumseagreen"><a href="https://www.nparks.gov.sg/activities/fun-and-recreation/barbecueing/apply-for-a-bbq-permit"><b>Book a pit</b></a></button>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:Royalblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Chill out Bar/Restaurant</h2>
+  <p>Known for their good food, & great music, Georges offers a wide selection of tasty food and thirst-quenching beverages that is bound to keep you coming back!</p>
+<button class="block" style="background-color: royalblue"><a href="https://www.georges.com.sg/"><b>Visit Website</b></a></button>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:tomato">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Seek comfort in local dishes</h2>
+  <p>Popular with families and large groups, this restaurant dishes out Halal Chinese cuisine that is well loved by all.</p>
+<button class="block" style="background-color: tomato"><a href="http://www.rasaistimewa.com.sg/"><b>Visit Website</b></a></button>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+<p><font color="AliceBlue">Empty</font></p>
+</body>
+</html>
